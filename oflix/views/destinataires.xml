@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+
+<record id='action_all_destinataires' model='ir.actions.act_window'>
+  <field name='name'>Destinataires</field>
+  <field name='res_model'>oflix.destinataire</field>
+  <field name='view_mode'>tree,form</field>
+</record> 
+
+ 
+
+<record id="view_all_destinataires_tree" model="ir.ui.view">
+
+           <field name='name'>Liste des destinataires </field>
+           <field name='model'>oflix.destinataire</field>
+           <field name='arch' type='xml'>
+             <tree>
+                <field name='nom_destinataire'/>
+                <field name='phone_destinataire'/>
+                <field name='addresse_destinataire'/>
+             </tree>
+           </field>
+</record>
+
+<menuitem 
+    id="menu_destinataires_top_level"
+    name="DESTINATAIRES"
+     parent="menu_expediteurs_top_level"
+    />
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

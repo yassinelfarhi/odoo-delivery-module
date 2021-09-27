@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+
+<record id='action_all_livreurs' model='ir.actions.act_window'>
+  <field name='name'>Livreurs</field>
+  <field name='res_model'>oflix.livreur</field>
+  <field name='view_mode'>tree,form</field>
+</record> 
+
+ 
+
+<record id="view_all_collis_tree" model="ir.ui.view">
+
+           <field name='name'>Liste des livreurs </field>
+           <field name='model'>oflix.livreur</field>
+           <field name='arch' type='xml'>
+             <tree>
+                <field name='name'/>
+                <field name='phone'/>
+             </tree>
+           </field>
+</record>
+
+<menuitem 
+    id="menu_livreurs_top_level"
+    name="LIVREURS"
+     parent="menu_expediteurs_top_level"
+    />
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

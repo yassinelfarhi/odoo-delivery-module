@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<odoo>
+
+<record id='action_all_expediteurs' model='ir.actions.act_window'>
+  <field name='name'>Expediteurs </field>
+  <field name='res_model'>oflix.expediteur</field>
+  <field name='view_mode'>tree,form</field>
+</record> 
+
+<record id="view_all_expediteurs_tree" model="ir.ui.view">
+
+           <field name='name'>Liste des Expediteurs </field>
+           <field name='model'>oflix.expediteur</field>
+           <field name='arch' type='xml'>
+             <tree>
+                <field name='nom'/>
+                <field name='type'/>
+                <field name='adresse'/>
+                <field name='phone'/>
+             </tree>
+           </field>
+           
+
+</record>
+<menuitem 
+    id="menu_expediteurs_top_level"
+    name="OFLIX LIVRAISON"
+    />
+
+<menuitem 
+    id="menu_expediteurs_second_level"
+    name="EXPEDITEURS"
+    parent="menu_expediteurs_top_level"
+    />
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

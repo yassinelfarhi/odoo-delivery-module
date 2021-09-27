@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<odoo>
+
+<record id='action_all_collis' model='ir.actions.act_window'>
+  <field name='name'>Liste des Collis</field>
+  <field name='res_model'>oflix.collis</field>
+  <field name='view_mode'>tree,form,calendar</field>
+</record> 
+
+ 
+
+<record id="view_all_collis_tree" model="ir.ui.view">
+
+           <field name='name'>Collis</field>
+           <field name='model'>oflix.collis</field>
+           <field name='arch' type='xml'>
+             <tree>
+                
+                <field name='date_arrivee'/>
+                <field name='date_depart'/>
+                <field name='code_reference'/>
+                <field name='nom_destinataire'/>
+                <field name='addresse_destination'/>
+                <field name='date_depart_prevue'/>
+                <field name='date_arrivee_prevue'/>
+             
+             </tree>
+           </field>
+</record>
+
+<menuitem 
+    id="menu_collis_top_level"
+    name="COLLIS"
+    parent="menu_expediteurs_top_level"
+    />
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</odoo>
