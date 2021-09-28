@@ -15,7 +15,8 @@
         'views/collis.xml',
         'views/livreurs.xml',
         'views/destinataires.xml',
-        'views/calendrier.xml'
+        'views/calendrier.xml',
+        'security/ir.model.access.csv'
     ],
     'demo': [],
     'installable': True,
